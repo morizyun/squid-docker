@@ -196,3 +196,5 @@ typings/
 .idea/*
 rancher-compose.yml
 test-procedure.md
+docker-compose.yml
+
