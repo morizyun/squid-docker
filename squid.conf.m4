@@ -7189,3 +7189,5 @@ request_header_access Via deny all
 request_header_access Cache-Control deny all
 # No Caching
 no_cache deny all
+acl NOCACHE src all
+cache deny NOCACHE
