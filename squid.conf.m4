@@ -7188,6 +7188,7 @@ request_header_access X-Forwarded-For deny all
 request_header_access Via deny all
 request_header_access Cache-Control deny all
 # No Caching
-no_cache deny all
-acl NOCACHE src all
-cache deny NOCACHE
+cache_dir null /dev/null
+cache_store_log none
+cache_access_log /dev/null
+cache_log /dev/null
