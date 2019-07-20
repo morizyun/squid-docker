@@ -9,7 +9,7 @@ m4 -DCACHE_MAX_SIZE="{{${CACHE_MAX_SIZE:-100}}}" \
    -DSQUID_NEVER_DIRECT="{{${SQUID_NEVER_DIRECT:-}}}" \
    /etc/squid3/squid.conf.m4 > /etc/squid3/squid.conf
 
-#		acssions on the log dir
+# actions on the log dir
 sudo -u proxy -H mkdir -p /var/log/squid3
 chmod -R 755 /var/log/squid3
 chown -R proxy:proxy /var/log/squid3
